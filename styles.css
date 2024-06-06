@@ -443,7 +443,7 @@ h1{
 }
 
 .pbanner > img{
-    width: 400px;
+    width: 100%;
     height: auto;
 }
 
@@ -715,4 +715,12 @@ h1{
         color: white;
         padding: 3%;
     }   
+}
+
+@media screen and (max-width: 420px){
+
+    .mItem-row{
+        flex-direction: column;
+    }
+      
 }
