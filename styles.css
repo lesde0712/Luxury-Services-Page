@@ -1,0 +1,718 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw; 
+    overflow-x: hidden; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-item{
+    list-style: none;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    height: 30px;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.navBar{
+    position: fixed;
+    height: 100px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.scrolled{
+    background-color: #333333;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.menuItem{
+    flex: 1;
+    font-size: 16px;
+    font-family: karla;
+}
+
+.banner{
+    background-image: linear-gradient(rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.4)),url('./public/Banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.services{
+    margin-top: 12%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.navBar2{
+    background-color: #4b4b4b;
+    height: 59px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 70px;
+    color: white;
+    font-family: 'Playfair Display',serif;
+    font-weight: 80;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.searchBar{
+    margin-left: 20%;
+    height: 30px;
+    width: 400px;
+    background-color: #4b4b4b;
+    border: none;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    font-size: larger;
+    opacity: 0.8;
+  }
+
+
+.bookAppointment{
+    margin-right: 5%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.secondary{
+    font-size: 43px;
+    font-weight: 80;
+    font-family: 'Playfair Display', serif;
+}
+
+.title{
+    display: flex;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.title h2{
+    border-bottom: 1px solid black;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.marketing-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.marketing-intro{
+    text-align: center;
+}
+
+.mIntro-row{
+    flex: 1;
+    display: flex;
+    gap: 1%;
+    width: 74%;
+}
+
+.mIntro-item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    padding: 20px;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.63);
+    align-items: center;
+}
+
+.mIntro-item > p {
+    text-align: center;
+}
+
+.marketing-intro > h3{
+    font-size: 30px;
+}
+
+.marketing-intro > p{
+    font-size: 18px;
+}
+
+.marketing-container{
+    display: flex;
+    align-content: center; 
+    justify-content: center;
+    width: 74%;
+}
+
+.mItem-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    width: 50%;
+}
+
+.mItem-row{
+    display: flex;
+    width: 100%;
+    gap: 30%;
+}
+
+.mitem-row > p{
+    font-size: 14px;
+}
+
+.marketing-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.marketing-item img{
+    width: 100%;
+    height: auto;
+}
+
+.marketing-image{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.marketing-image  img{
+    width: 50%;
+    height: auto;
+}
+
+.revamp-container{
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    gap: 10px;
+}
+
+.rItem-row{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rItem-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    color: white;
+    background-color: #222222;
+}
+
+.rItem-card ul li{
+    font-size: large;
+    gap: 5px;
+}
+
+.rItem{
+    flex: 1;
+    display: flex;
+    text-align: center;
+}
+
+.rItem ul{
+    display: inline-block;
+}
+
+.rItem img{
+    width: 100%;
+    height: auto;
+}
+
+.rItem-title{
+    display: none;
+}
+
+.expertise-item{
+    text-align: left;
+}
+
+.selling-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.8)),url("./public/Selling-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 74%;
+}
+
+.buying-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.8)),url("./public/Buying-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 74%;
+}
+
+.selling-row, .buying-row{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    gap: 30px;
+    padding: 5%;
+}
+
+.selling-item, .buying-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.selling-item > h2 , .buying-item > h2{
+    font-size: 43px;
+    font-family: 'Playfair Display', serif;
+}
+
+.selling-item > p , .buying-item> p{
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hansen-container{
+    display: flex;
+    flex-direction: row;
+    width: 74%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hansen-description{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 3%;
+}
+
+.hansen-img img {
+    width: 100%;
+    height: auto;
+}
+
+.hansen-img{
+    flex: 1;
+    width: 100%;
+    display: flex
+}
+
+.hansen-description > ul{
+    margin-left: 3%;
+}
+
+.hansen-description p{
+    text-align: left;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 74%;
+    gap: 10px;
+}
+
+.about-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.about-img > img{
+    width: 100%;
+    height: auto;
+}
+.about-img {
+    display: flex;
+    flex: 1;
+}
+.about-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8);
+    width: 100%;
+    text-align: center;
+}
+
+.about-details > h2{
+    font-size: 35px;
+}
+
+.partner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 74%;
+    gap: 10px;
+}
+
+.pbanner{
+    display: flex;
+}
+
+.pbanner > img{
+    width: 400px;
+    height: auto;
+}
+
+.pLogo > img {
+    width: 100px;
+    height: auto;
+}
+
+.partner-logos{
+    flex: 1;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.partner-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.partner-img > img {
+    width: 100%;
+    height: auto;
+}
+
+.partner-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    text-align: center;
+}
+
+
+.partner-footer{
+    margin-top: 1%;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+}
+
+.work-container{
+    background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)),url("./public/work-with-us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.work-p{
+    margin-top: 2%;
+    padding: 2%;
+    width: 50%;
+    text-align: center;
+}
+
+.line{
+    margin-top: 2%;
+    width: 300px;
+    height: 1px;
+    background-color: white;
+}
+
+.contact-button{
+    margin-top: 2%;
+    padding: 10px;
+    border: solid 2px;
+}
+
+.bSection-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bSection-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.JH-partnership{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-contact{
+    flex: 1;
+    margin-top: 3%;
+    display: flex;
+    gap: 50px;
+}
+
+.socmed-logos{
+    margin-top: 10%;
+    display: flex;
+    gap: 20px;
+}
+
+.slogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #222222;
+    width: 40px;
+    height: 40px;
+}
+
+.bSection-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 3%
+}
+
+.newsLetter{
+    flex: 1;
+    width: 50%;
+}
+
+.email{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    gap: 10px;
+}
+
+.email-form{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-bottom: solid 1px; 
+}
+
+.sub-btn{
+    display: flex;
+    padding: 1%;
+    border: solid 1px;
+}
+
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.plogos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.p-logo > img{
+    height: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1540px) {
+
+   
+
+    .services{
+        margin-top: 20%;
+    }
+ 
+    .navBar{
+        position: fixed;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+        position:fixed;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color:#222222;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 10px 0;
+    }
+
+    .navMenu.active{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .email{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .services{
+        margin-top: 50%;
+    }
+
+    .secondary{
+        text-align: center;
+    }
+    
+    .mIntro-row, .rItem-row, .selling-row, .buying-row, .hansen-container, .bSection-container, .add-contact{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .marketing-image, .rItem-card, .about-img, .partner-img, .searchBar, .bookAppointment{
+        display: none;
+    }
+
+    .rItem-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #222222;
+        color: white;
+        padding: 3%;
+    }   
+}
